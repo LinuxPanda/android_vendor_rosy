@@ -17,11 +17,10 @@
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:$(TARGET_COPY_OUT_VENDOR)/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
     vendor/xiaomi/rosy/proprietary/vendor/lib/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.default.so \
-    vendor/xiaomi/rosy/proprietary/lib/libdualcameraddm.so:system/lib/libdualcameraddm.so \
-    vendor/xiaomi/rosy/proprietary/lib/libjni_dualcamera.so:system/lib/libjni_dualcamera.so \
-    vendor/xiaomi/rosy/proprietary/lib/libmorpho_memory_allocator.so:system/lib/libmorpho_memory_allocator.so \
-    vendor/xiaomi/rosy/proprietary/lib/libmorpho_panorama.so:system/lib/libmorpho_panorama.so \
-    vendor/xiaomi/rosy/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libmorpho_memory_allocator.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmorpho_memory_allocator.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libmorpho_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmorpho_panorama.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libmorpho_panorama_gp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmorpho_panorama_gp.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib64/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.default.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib64/hw/goodixfingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/goodixfingerprint.default.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
@@ -950,6 +949,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov12a10_i_india_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov12a10_i_india_cpp_liveshot.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov12a10_i_india_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov12a10_i_india_cpp_preview.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov12a10_i_india_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov12a10_i_india_cpp_snapshot.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov12a10_i_india_cpp_snapshot_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov12a10_i_india_cpp_snapshot_hht.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov12a10_i_india_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov12a10_i_india_cpp_video.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov12a10_i_india_default_preview_dw9763.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov12a10_i_india_default_preview_dw9763.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov12a10_i_india_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov12a10_i_india_default_video.so \
@@ -1007,6 +1007,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_i_india_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_i_india_cpp_preview.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_i_india_cpp_preview_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_i_india_cpp_preview_torch.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_i_india_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_i_india_cpp_snapshot.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_i_india_cpp_snapshot_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_i_india_cpp_snapshot_hht.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_i_india_cpp_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_i_india_cpp_snapshot_torch.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_i_india_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_i_india_cpp_video.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_i_india_cpp_video_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_i_india_cpp_video_torch.so \
@@ -1076,6 +1077,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_ii_india_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_ii_india_cpp_preview.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_ii_india_cpp_preview_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_ii_india_cpp_preview_torch.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_ii_india_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_ii_india_cpp_snapshot.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_ii_india_cpp_snapshot_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_ii_india_cpp_snapshot_hht.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_ii_india_cpp_snapshot_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_ii_india_cpp_snapshot_torch.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_ii_india_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_ii_india_cpp_video.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_ovt_ov5675_ii_india_cpp_video_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ovt_ov5675_ii_india_cpp_video_torch.so \
@@ -1495,6 +1497,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_sony_imx486_ii_india_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sony_imx486_ii_india_cpp_liveshot.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_sony_imx486_ii_india_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sony_imx486_ii_india_cpp_preview.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_sony_imx486_ii_india_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sony_imx486_ii_india_cpp_snapshot.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_sony_imx486_ii_india_cpp_snapshot_hht.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sony_imx486_ii_india_cpp_snapshot_hht.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_sony_imx486_ii_india_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sony_imx486_ii_india_cpp_video.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_sony_imx486_ii_india_default_preview_dw9714v.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sony_imx486_ii_india_default_preview_dw9714v.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_sony_imx486_ii_india_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sony_imx486_ii_india_default_video.so \
@@ -1515,6 +1518,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_sony_imx486_ii_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sony_imx486_ii_snapshot.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_sony_imx486_ii_zsl_preview_dw9714v.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sony_imx486_ii_zsl_preview_dw9714v.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libchromatix_sony_imx486_ii_zsl_video_dw9714v.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_sony_imx486_ii_zsl_video_dw9714v.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libflash_gpio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_gpio.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libflash_pmic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_pmic.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libjpegdhw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdhw.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libjpegdmahw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdmahw.so \
@@ -1683,8 +1687,19 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc_pipe.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor_stub.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libscveImageCorrection.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveImageCorrection.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama_lite.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib64/hw/fpcfingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fpcfingerprint.default.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
