@@ -101,6 +101,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/vendor/etc/camera/s5k5e8_qtech_riva_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e8_qtech_riva_chromatix.xml \
     vendor/xiaomi/rosy/proprietary/vendor/etc/camera/s5k5e8_qtech_riva_india_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e8_qtech_riva_india_chromatix.xml \
     vendor/xiaomi/rosy/proprietary/vendor/etc/camera/sony_imx486_ii_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sony_imx486_ii_chromatix.xml \
+    vendor/xiaomi/rosy/proprietary/vendor/etc/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
     vendor/xiaomi/rosy/proprietary/vendor/etc/qdcm_calib_data_ft8006m_boe_5p7_720p_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ft8006m_boe_5p7_720p_video.xml \
     vendor/xiaomi/rosy/proprietary/vendor/etc/qdcm_calib_data_ft8613_csot_5p7_720p_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ft8613_csot_5p7_720p_video.xml \
     vendor/xiaomi/rosy/proprietary/vendor/etc/qdcm_calib_data_ft8613_ebbg_5p7_720p_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ft8613_ebbg_5p7_720p_video.xml \
@@ -123,6 +124,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/vendor/firmware/a540_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_gpmu.fw2 \
     vendor/xiaomi/rosy/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
     vendor/xiaomi/rosy/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
+    vendor/xiaomi/rosy/proprietary/vendor/framework/com.fingerprints.extension.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.fingerprints.extension.jar \
     vendor/xiaomi/rosy/proprietary/vendor/lib/hw/camera.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8953.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libFaceGrade.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFaceGrade.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libXMFD_AgeGender.so:$(TARGET_COPY_OUT_VENDOR)/lib/libXMFD_AgeGender.so \
@@ -1700,12 +1702,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/xiaomi/rosy/proprietary/vendor/lib64/com.fingerprints.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@1.0.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib64/hw/fpcfingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fpcfingerprint.default.so \
     vendor/xiaomi/rosy/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 PRODUCT_PACKAGES += \
     libts_detected_face_hal \
-    libts_face_beautify_hal
+    libts_face_beautify_hal \
+    FingerprintExtensionService
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/bin/wfdservice:system/bin/wfdservice \
